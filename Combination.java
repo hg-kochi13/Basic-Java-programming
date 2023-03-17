@@ -11,6 +11,10 @@ public class Combination {
         n = in.nextInt();
         System.out.print("Enter k: ");
         k = in.nextInt();
+        if (n<k) {
+            System.out.println("n must be greater than k");
+            System.exit(0);
+        }
     }
     public static int fact(int n) {
         if(n==0)
